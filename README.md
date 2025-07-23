@@ -34,36 +34,39 @@ This project is ideal for beginners to intermediate developers looking to unders
 
 ## 📁 Project Structure
 
+<pre>
+
 bookapi/
-│
 ├── src/
-│ ├── main/
-│ │ ├── java/com/example/bookapi/
-│ │ │ ├── controller/ → REST Controllers
-│ │ │ ├── model/ → JPA Entities
-│ │ │ ├── repository/ → Spring Data JPA Repositories
-│ │ │ ├── service/ → Business Logic Layer
-│ │ │ └── BookapiApplication.java
-│ │ └── resources/
-│ │ ├── application.properties
-│ │ └── static/, templates/ (if needed)
-│ └── test/
-│ └── java/com/example/bookapi/controller/
-│ └── BookControllerTest.java
-│
+│   ├── main/
+│   │   ├── java/com/example/bookapi/
+│   │   │   ├── controller/         → REST Controllers
+│   │   │   ├── model/              → JPA Entities
+│   │   │   ├── repository/         → Spring Data JPA Repositories
+│   │   │   ├── service/            → Business Logic Layer
+│   │   │   └── BookapiApplication.java
+│   │   └── resources/
+│   │       ├── application.properties
+│   │       ├── static/
+│   │       └── templates/
+│   └── test/
+│       └── java/com/example/bookapi/controller/
+│           └── BookControllerTest.java
 ├── .gitignore
 ├── README.md
 └── pom.xml
 
-
+</pre>
 
 ---
 
 ## ⚙️ Running the Application
 
 ### 📦 With Maven
-```
-bash
+
+```bash
+mvn spring-boot:run
+
 mvn spring-boot:run
 Or package and run:
 
